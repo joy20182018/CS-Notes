@@ -50,7 +50,9 @@ Return "student a am I"
 
 # 4. 两个字符串包含的字符是否完全相同
 
-[242. Valid Anagram (Easy)](https://leetcode.com/problems/valid-anagram/description/)
+242\. Valid Anagram (Easy)
+
+[Leetcode](https://leetcode.com/problems/valid-anagram/description/) / [力扣](https://leetcode-cn.com/problems/valid-anagram/description/)
 
 ```html
 s = "anagram", t = "nagaram", return true.
@@ -81,7 +83,9 @@ public boolean isAnagram(String s, String t) {
 
 # 5. 计算一组字符集合可以组成的回文字符串的最大长度
 
-[409. Longest Palindrome (Easy)](https://leetcode.com/problems/longest-palindrome/description/)
+409\. Longest Palindrome (Easy)
+
+[Leetcode](https://leetcode.com/problems/longest-palindrome/description/) / [力扣](https://leetcode-cn.com/problems/longest-palindrome/description/)
 
 ```html
 Input : "abccccdd"
@@ -112,7 +116,9 @@ public int longestPalindrome(String s) {
 
 # 6. 字符串同构
 
-[205. Isomorphic Strings (Easy)](https://leetcode.com/problems/isomorphic-strings/description/)
+205\. Isomorphic Strings (Easy)
+
+[Leetcode](https://leetcode.com/problems/isomorphic-strings/description/) / [力扣](https://leetcode-cn.com/problems/isomorphic-strings/description/)
 
 ```html
 Given "egg", "add", return true.
@@ -140,7 +146,9 @@ public boolean isIsomorphic(String s, String t) {
 
 # 7. 回文子字符串个数
 
-[647. Palindromic Substrings (Medium)](https://leetcode.com/problems/palindromic-substrings/description/)
+647\. Palindromic Substrings (Medium)
+
+[Leetcode](https://leetcode.com/problems/palindromic-substrings/description/) / [力扣](https://leetcode-cn.com/problems/palindromic-substrings/description/)
 
 ```html
 Input: "aaa"
@@ -172,7 +180,9 @@ private void extendSubstrings(String s, int start, int end) {
 
 # 8. 判断一个整数是否是回文数
 
-[9. Palindrome Number (Easy)](https://leetcode.com/problems/palindrome-number/description/)
+9\. Palindrome Number (Easy)
+
+[Leetcode](https://leetcode.com/problems/palindrome-number/description/) / [力扣](https://leetcode-cn.com/problems/palindrome-number/description/)
 
 要求不能使用额外空间，也就不能将整数转换为字符串进行判断。
 
@@ -197,7 +207,9 @@ public boolean isPalindrome(int x) {
 
 # 9. 统计二进制字符串中连续 1 和连续 0 数量相同的子字符串个数
 
-[696. Count Binary Substrings (Easy)](https://leetcode.com/problems/count-binary-substrings/description/)
+696\. Count Binary Substrings (Easy)
+
+[Leetcode](https://leetcode.com/problems/count-binary-substrings/description/) / [力扣](https://leetcode-cn.com/problems/count-binary-substrings/description/)
 
 ```html
 Input: "00110011"
@@ -227,5 +239,6 @@ public int countBinarySubstrings(String s) {
 
 
 
-</br><div align="center">💡 </br></br> 更多精彩内容将发布在公众号 **CyC2018**，公众号提供了该项目的离线阅读版本，后台回复"下载" 即可领取。也提供了一份技术面试复习思维导图，不仅系统整理了面试知识点，而且标注了各个知识点的重要程度，从而帮你理清多而杂的面试知识点，后台回复"资料" 即可领取。我基本是按照这个思维导图来进行复习的，对我拿到了 BAT 头条等 Offer 起到很大的帮助。你们完全可以和我一样根据思维导图上列的知识点来进行复习，就不用看很多不重要的内容，也可以知道哪些内容很重要从而多安排一些复习时间。</div></br>
-<div align="center"><img width="180px" src="https://cyc-1256109796.cos.ap-guangzhou.myqcloud.com/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg"></img></div>
+
+
+<div align="center"><img width="320px" src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/githubio/公众号二维码-2.png"></img></div>

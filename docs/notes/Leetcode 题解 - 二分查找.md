@@ -8,7 +8,7 @@
 <!-- GFM-TOC -->
 
 
-**正常实现** 
+**正常实现**  
 
 ```text
 Input : [1,2,3,4,5]
@@ -33,11 +33,11 @@ public int binarySearch(int[] nums, int key) {
 }
 ```
 
-**时间复杂度** 
+**时间复杂度**  
 
 二分查找也称为折半查找，每次都能将查找区间减半，这种折半特性的算法时间复杂度为 O(logN)。
 
-**m 计算** 
+**m 计算**  
 
 有两种计算中值 m 的方式：
 
@@ -46,16 +46,16 @@ public int binarySearch(int[] nums, int key) {
 
 l + h 可能出现加法溢出，也就是说加法的结果大于整型能够表示的范围。但是 l 和 h 都为正数，因此 h - l 不会出现加法溢出问题。所以，最好使用第二种计算法方法。
 
-**未成功查找的返回值** 
+**未成功查找的返回值**  
 
 循环退出时如果仍然没有查找到 key，那么表示查找失败。可以有两种返回值：
 
 - -1：以一个错误码表示没有查找到 key
 - l：将 key 插入到 nums 中的正确位置
 
-**变种** 
+**变种**  
 
-二分查找可以有很多变种，变种实现要注意边界值的判断。例如在一个有重复元素的数组中查找 key 的最左位置的实现如下：
+二分查找可以有很多变种，实现变种要注意边界值的判断。例如在一个有重复元素的数组中查找 key 的最左位置的实现如下：
 
 ```java
 public int binarySearch(int[] nums, int key) {
@@ -96,7 +96,9 @@ l   m   h
 
 # 1. 求开方
 
-[69. Sqrt(x) (Easy)](https://leetcode.com/problems/sqrtx/description/)
+69\. Sqrt(x) (Easy)
+
+[Leetcode](https://leetcode.com/problems/sqrtx/description/) / [力扣](https://leetcode-cn.com/problems/sqrtx/description/)
 
 ```html
 Input: 4
@@ -134,7 +136,9 @@ public int mySqrt(int x) {
 
 # 2. 大于给定元素的最小元素
 
-[744. Find Smallest Letter Greater Than Target (Easy)](https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/)
+744\. Find Smallest Letter Greater Than Target (Easy)
+
+[Leetcode](https://leetcode.com/problems/find-smallest-letter-greater-than-target/description/) / [力扣](https://leetcode-cn.com/problems/find-smallest-letter-greater-than-target/description/)
 
 ```html
 Input:
@@ -168,7 +172,9 @@ public char nextGreatestLetter(char[] letters, char target) {
 
 # 3. 有序数组的 Single Element
 
-[540. Single Element in a Sorted Array (Medium)](https://leetcode.com/problems/single-element-in-a-sorted-array/description/)
+540\. Single Element in a Sorted Array (Medium)
+
+[Leetcode](https://leetcode.com/problems/single-element-in-a-sorted-array/description/) / [力扣](https://leetcode-cn.com/problems/single-element-in-a-sorted-array/description/)
 
 ```html
 Input: [1, 1, 2, 3, 3, 4, 4, 8, 8]
@@ -205,7 +211,9 @@ public int singleNonDuplicate(int[] nums) {
 
 # 4. 第一个错误的版本
 
-[278. First Bad Version (Easy)](https://leetcode.com/problems/first-bad-version/description/)
+278\. First Bad Version (Easy)
+
+[Leetcode](https://leetcode.com/problems/first-bad-version/description/) / [力扣](https://leetcode-cn.com/problems/first-bad-version/description/)
 
 题目描述：给定一个元素 n 代表有 [1, 2, ..., n] 版本，在第 x 位置开始出现错误版本，导致后面的版本都错误。可以调用 isBadVersion(int x) 知道某个版本是否错误，要求找到第一个错误的版本。
 
@@ -230,7 +238,9 @@ public int firstBadVersion(int n) {
 
 # 5. 旋转数组的最小数字
 
-[153. Find Minimum in Rotated Sorted Array (Medium)](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/)
+153\. Find Minimum in Rotated Sorted Array (Medium)
+
+[Leetcode](https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/) / [力扣](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/description/)
 
 ```html
 Input: [3,4,5,1,2],
@@ -254,7 +264,9 @@ public int findMin(int[] nums) {
 
 # 6. 查找区间
 
-[34. Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
+34\. Find First and Last Position of Element in Sorted Array
+
+[Leetcode](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) / [力扣](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)
 
 ```html
 Input: nums = [5,7,7,8,8,10], target = 8
@@ -264,10 +276,14 @@ Input: nums = [5,7,7,8,8,10], target = 6
 Output: [-1,-1]
 ```
 
+题目描述：给定一个有序数组 nums 和一个目标 target，要求找到 target 在 nums 中的第一个位置和最后一个位置。
+
+可以用二分查找找出第一个位置和最后一个位置，但是寻找的方法有所不同，需要实现两个二分查找。我们将寻找  target 最后一个位置，转换成寻找 target+1 第一个位置，再往前移动一个位置。这样我们只需要实现一个二分查找代码即可。
+
 ```java
 public int[] searchRange(int[] nums, int target) {
-    int first = binarySearch(nums, target);
-    int last = binarySearch(nums, target + 1) - 1;
+    int first = findFirst(nums, target);
+    int last = findFirst(nums, target + 1) - 1;
     if (first == nums.length || nums[first] != target) {
         return new int[]{-1, -1};
     } else {
@@ -275,7 +291,7 @@ public int[] searchRange(int[] nums, int target) {
     }
 }
 
-private int binarySearch(int[] nums, int target) {
+private int findFirst(int[] nums, int target) {
     int l = 0, h = nums.length; // 注意 h 的初始值
     while (l < h) {
         int m = l + (h - l) / 2;
@@ -289,9 +305,17 @@ private int binarySearch(int[] nums, int target) {
 }
 ```
 
+在寻找第一个位置的二分查找代码中，需要注意 h 的取值为 nums.length，而不是 nums.length - 1。先看以下示例：
+
+```
+nums = [2,2], target = 2
+```
+
+如果 h 的取值为 nums.length - 1，那么 last = findFirst(nums, target + 1) - 1 = 1 - 1 = 0。这是因为 findLeft 只会返回 [0, nums.length - 1] 范围的值，对于 findFirst([2,2], 3) ，我们希望返回 3 插入 nums 中的位置，也就是数组最后一个位置再往后一个位置，即 nums.length。所以我们需要将 h 取值为 nums.length，从而使得 findFirst返回的区间更大，能够覆盖 target 大于 nums 最后一个元素的情况。
 
 
 
 
-</br><div align="center">💡 </br></br> 更多精彩内容将发布在公众号 **CyC2018**，公众号提供了该项目的离线阅读版本，后台回复"下载" 即可领取。也提供了一份技术面试复习思维导图，不仅系统整理了面试知识点，而且标注了各个知识点的重要程度，从而帮你理清多而杂的面试知识点，后台回复"资料" 即可领取。我基本是按照这个思维导图来进行复习的，对我拿到了 BAT 头条等 Offer 起到很大的帮助。你们完全可以和我一样根据思维导图上列的知识点来进行复习，就不用看很多不重要的内容，也可以知道哪些内容很重要从而多安排一些复习时间。</div></br>
-<div align="center"><img width="180px" src="https://cyc-1256109796.cos.ap-guangzhou.myqcloud.com/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg"></img></div>
+
+
+<div align="center"><img width="320px" src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/githubio/公众号二维码-2.png"></img></div>

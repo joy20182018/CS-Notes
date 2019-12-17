@@ -46,7 +46,9 @@ x 和 y 的最小公倍数为：lcm(x,y) =  2<sup>max(m0,n0)</sup> \* 3<sup>max(
 
 ## 1. 生成素数序列
 
-[204. Count Primes (Easy)](https://leetcode.com/problems/count-primes/description/)
+204\. Count Primes (Easy)
+
+[Leetcode](https://leetcode.com/problems/count-primes/description/) / [力扣](https://leetcode-cn.com/problems/count-primes/description/)
 
 埃拉托斯特尼筛法在每次找到一个素数时，将能被素数整除的数排除掉。
 
@@ -122,7 +124,9 @@ public int gcd(int a, int b) {
 
 ## 1. 7 进制
 
-[504. Base 7 (Easy)](https://leetcode.com/problems/base-7/description/)
+504\. Base 7 (Easy)
+
+[Leetcode](https://leetcode.com/problems/base-7/description/) / [力扣](https://leetcode-cn.com/problems/base-7/description/)
 
 ```java
 public String convertToBase7(int num) {
@@ -153,7 +157,9 @@ public String convertToBase7(int num) {
 
 ## 2. 16 进制
 
-[405. Convert a Number to Hexadecimal (Easy)](https://leetcode.com/problems/convert-a-number-to-hexadecimal/description/)
+405\. Convert a Number to Hexadecimal (Easy)
+
+[Leetcode](https://leetcode.com/problems/convert-a-number-to-hexadecimal/description/) / [力扣](https://leetcode-cn.com/problems/convert-a-number-to-hexadecimal/description/)
 
 ```html
 Input:
@@ -186,7 +192,9 @@ public String toHex(int num) {
 
 ## 3. 26 进制
 
-[168. Excel Sheet Column Title (Easy)](https://leetcode.com/problems/excel-sheet-column-title/description/)
+168\. Excel Sheet Column Title (Easy)
+
+[Leetcode](https://leetcode.com/problems/excel-sheet-column-title/description/) / [力扣](https://leetcode-cn.com/problems/excel-sheet-column-title/description/)
 
 ```html
 1 -> A
@@ -214,7 +222,9 @@ public String convertToTitle(int n) {
 
 ## 1. 统计阶乘尾部有多少个 0
 
-[172. Factorial Trailing Zeroes (Easy)](https://leetcode.com/problems/factorial-trailing-zeroes/description/)
+172\. Factorial Trailing Zeroes (Easy)
+
+[Leetcode](https://leetcode.com/problems/factorial-trailing-zeroes/description/) / [力扣](https://leetcode-cn.com/problems/factorial-trailing-zeroes/description/)
 
 尾部的 0 由 2 * 5 得来，2 的数量明显多于 5 的数量，因此只要统计有多少个 5 即可。
 
@@ -232,7 +242,9 @@ public int trailingZeroes(int n) {
 
 ## 1. 二进制加法
 
-[67. Add Binary (Easy)](https://leetcode.com/problems/add-binary/description/)
+67\. Add Binary (Easy)
+
+[Leetcode](https://leetcode.com/problems/add-binary/description/) / [力扣](https://leetcode-cn.com/problems/add-binary/description/)
 
 ```html
 a = "11"
@@ -260,7 +272,9 @@ public String addBinary(String a, String b) {
 
 ## 2. 字符串加法
 
-[415. Add Strings (Easy)](https://leetcode.com/problems/add-strings/description/)
+415\. Add Strings (Easy)
+
+[Leetcode](https://leetcode.com/problems/add-strings/description/) / [力扣](https://leetcode-cn.com/problems/add-strings/description/)
 
 字符串的值为非负整数。
 
@@ -282,7 +296,9 @@ public String addStrings(String num1, String num2) {
 
 ## 1. 改变数组元素使所有的数组元素都相等
 
-[462. Minimum Moves to Equal Array Elements II (Medium)](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/description/)
+462\. Minimum Moves to Equal Array Elements II (Medium)
+
+[Leetcode](https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/description/) / [力扣](https://leetcode-cn.com/problems/minimum-moves-to-equal-array-elements-ii/description/)
 
 ```html
 Input:
@@ -305,7 +321,7 @@ Only two moves are needed (remember each move increments or decrements one eleme
 
 设数组长度为 N，则可以找到 N/2 对 a 和 b 的组合，使它们都移动到 m 的位置。
 
-**解法 1** 
+**解法 1**  
 
 先排序，时间复杂度：O(NlogN)
 
@@ -323,7 +339,7 @@ public int minMoves2(int[] nums) {
 }
 ```
 
-**解法 2** 
+**解法 2**  
 
 使用快速选择找到中位数，时间复杂度 O(N)
 
@@ -378,7 +394,9 @@ private void swap(int[] nums, int i, int j) {
 
 ## 1. 数组中出现次数多于 n / 2 的元素
 
-[169. Majority Element (Easy)](https://leetcode.com/problems/majority-element/description/)
+169\. Majority Element (Easy)
+
+[Leetcode](https://leetcode.com/problems/majority-element/description/) / [力扣](https://leetcode-cn.com/problems/majority-element/description/)
 
 先对数组排序，最中间那个数出现次数一定多于 n / 2。
 
@@ -406,7 +424,9 @@ public int majorityElement(int[] nums) {
 
 ## 1. 平方数
 
-[367. Valid Perfect Square (Easy)](https://leetcode.com/problems/valid-perfect-square/description/)
+367\. Valid Perfect Square (Easy)
+
+[Leetcode](https://leetcode.com/problems/valid-perfect-square/description/) / [力扣](https://leetcode-cn.com/problems/valid-perfect-square/description/)
 
 ```html
 Input: 16
@@ -432,7 +452,9 @@ public boolean isPerfectSquare(int num) {
 
 ## 2. 3 的 n 次方
 
-[326. Power of Three (Easy)](https://leetcode.com/problems/power-of-three/description/)
+326\. Power of Three (Easy)
+
+[Leetcode](https://leetcode.com/problems/power-of-three/description/) / [力扣](https://leetcode-cn.com/problems/power-of-three/description/)
 
 ```java
 public boolean isPowerOfThree(int n) {
@@ -442,7 +464,9 @@ public boolean isPowerOfThree(int n) {
 
 ## 3. 乘积数组
 
-[238. Product of Array Except Self (Medium)](https://leetcode.com/problems/product-of-array-except-self/description/)
+238\. Product of Array Except Self (Medium)
+
+[Leetcode](https://leetcode.com/problems/product-of-array-except-self/description/) / [力扣](https://leetcode-cn.com/problems/product-of-array-except-self/description/)
 
 ```html
 For example, given [1,2,3,4], return [24,12,8,6].
@@ -473,7 +497,9 @@ public int[] productExceptSelf(int[] nums) {
 
 ## 4. 找出数组中的乘积最大的三个数
 
-[628. Maximum Product of Three Numbers (Easy)](https://leetcode.com/problems/maximum-product-of-three-numbers/description/)
+628\. Maximum Product of Three Numbers (Easy)
+
+[Leetcode](https://leetcode.com/problems/maximum-product-of-three-numbers/description/) / [力扣](https://leetcode-cn.com/problems/maximum-product-of-three-numbers/description/)
 
 ```html
 Input: [1,2,3,4]
@@ -509,5 +535,6 @@ public int maximumProduct(int[] nums) {
 
 
 
-</br><div align="center">💡 </br></br> 更多精彩内容将发布在公众号 **CyC2018**，公众号提供了该项目的离线阅读版本，后台回复"下载" 即可领取。也提供了一份技术面试复习思维导图，不仅系统整理了面试知识点，而且标注了各个知识点的重要程度，从而帮你理清多而杂的面试知识点，后台回复"资料" 即可领取。我基本是按照这个思维导图来进行复习的，对我拿到了 BAT 头条等 Offer 起到很大的帮助。你们完全可以和我一样根据思维导图上列的知识点来进行复习，就不用看很多不重要的内容，也可以知道哪些内容很重要从而多安排一些复习时间。</div></br>
-<div align="center"><img width="180px" src="https://cyc-1256109796.cos.ap-guangzhou.myqcloud.com/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg"></img></div>
+
+
+<div align="center"><img width="320px" src="https://cs-notes-1256109796.cos.ap-guangzhou.myqcloud.com/githubio/公众号二维码-2.png"></img></div>
